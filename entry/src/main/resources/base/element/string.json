@@ -35,6 +35,14 @@
     {
       "name": "twoformability_HelloWorld",
       "value": "Hello World"
+    },
+    {
+      "name": "formfractionability_description",
+      "value": "Java_Phone_Empty Feature Ability"
+    },
+    {
+      "name": "formfractionability_HelloWorld",
+      "value": "Hello World"
     }
   ]
 }

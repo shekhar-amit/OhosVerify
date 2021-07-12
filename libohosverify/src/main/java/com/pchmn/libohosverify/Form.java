@@ -76,7 +76,6 @@ public class Form extends DirectionalLayout {
             }
             mInflated = true;
         }
-
         // check the fields
         validateList();
     }
