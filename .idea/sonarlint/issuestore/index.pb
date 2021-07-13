@@ -64,8 +64,6 @@ X
 gradlew.bat,2\a\2a45a911a8f1836b0b6c5b758962572012d8f8c3
 <
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
-<
-CHANGELOG.md,a\b\ab09011fa121d0a2bb9fa4ca76094f2482b902b7
 l
 <libohosverify/src/main/java/com/pchmn/libohosverify/App.java,3\9\3928aec387421824dba6175d490590bc1e7a8046
 ~
