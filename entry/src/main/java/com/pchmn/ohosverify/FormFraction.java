@@ -8,7 +8,7 @@ import ohos.agp.components.Component;
 import ohos.agp.components.ComponentContainer;
 import ohos.agp.components.DirectionalLayout;
 import ohos.agp.components.LayoutScatter;
-import ohos.agp.components.Text;
+import ohos.agp.window.dialog.ToastDialog;
 
 /**
  * Form validation inside a Fraction.
@@ -17,7 +17,6 @@ public class FormFraction extends Fraction {
 
     Form mForm;
     Button mValidate;
-    Text mTextValid;
 
     @Override
     protected Component onComponentAttached(LayoutScatter scatter, ComponentContainer container, Intent intent) {
@@ -29,20 +28,20 @@ public class FormFraction extends Fraction {
     private void initComponents(Component mComponent) {
 
         DirectionalLayout mViewForm = (DirectionalLayout) mComponent.findComponentById(ResourceTable.Id_fragment_form1);
-        mTextValid = (Text) mComponent.findComponentById(ResourceTable.Id_text_is_valid);
         mForm = new Form.Builder(this, mViewForm)
                 .showErrors(true)
                 .build();
         mValidate = (Button) mComponent.findComponentById(ResourceTable.Id_validate_fraction);
         mValidate.setClickedListener(component -> {
             if (mForm.isValid()) {
-                mTextValid.setVisibility(Component.VISIBLE);
-                mTextValid.setText("Form is valid");
+                String msg = "Form is valid";
+                new ToastDialog(mComponent.getContext()).setDuration(1000).setText(msg).show();
             } else {
-                mTextValid.setVisibility(Component.VISIBLE);
-                mTextValid.setText("Form is invalid");
+                String msg = "Form is invalid";
+                new ToastDialog(mComponent.getContext()).setDuration(1000).setText(msg).show();
             }
         });
 
     }
+
 }
