@@ -16,6 +16,9 @@ import com.pchmn.libohosverify.validator.RegexValidator;
 import com.pchmn.libohosverify.validator.RequiredValidator;
 import com.pchmn.libohosverify.validator.UrlValidator;
 import com.pchmn.libohosverify.validator.ValidateValidator;
+
+import java.io.PrintWriter;
+import java.io.StringWriter;
 import java.util.Optional;
 import ohos.agp.components.Attr;
 import ohos.agp.components.AttrSet;
@@ -26,6 +29,8 @@ import ohos.agp.components.DependentLayout;
 import ohos.agp.components.TextField;
 import ohos.agp.utils.Color;
 import ohos.app.Context;
+import ohos.hiviewdfx.HiLog;
+import ohos.hiviewdfx.HiLogLabel;
 
 /**
  *  InputValidators are used to validate text fields.
@@ -62,6 +67,8 @@ public class InputValidator extends DependentLayout implements Component.Estimat
     // build
     private boolean mBuilt = false;
 
+    static final HiLogLabel LABEL = new HiLogLabel(HiLog.LOG_APP, 0x00201, "MY_TAG");
+
     /**
      * Construct for form.
      *
@@ -73,7 +80,9 @@ public class InputValidator extends DependentLayout implements Component.Estimat
         try {
             init(null);
         } catch (Exception e) {
-            e.printStackTrace();
+            StringWriter errors = new StringWriter();
+            e.printStackTrace(new PrintWriter(errors));
+            HiLog.error(LABEL,e.toString());
         }
     }
 
@@ -90,7 +99,9 @@ public class InputValidator extends DependentLayout implements Component.Estimat
         try {
             init(attrs);
         } catch (Exception e) {
-            e.printStackTrace();
+            StringWriter errors = new StringWriter();
+            e.printStackTrace(new PrintWriter(errors));
+            HiLog.error(LABEL,e.toString());
         }
     }
 
@@ -414,7 +425,9 @@ public class InputValidator extends DependentLayout implements Component.Estimat
             try {
                 throw new InvalidUIException("InputValidator must contain only one EditText");
             } catch (Exception e) {
-                e.printStackTrace();
+                StringWriter errors = new StringWriter();
+                e.printStackTrace(new PrintWriter(errors));
+                HiLog.error(LABEL,e.toString());
             }
         }
         mEditText = (TextField) getComponentAt(0);

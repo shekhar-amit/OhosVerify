@@ -49,7 +49,7 @@ public class LengthValidatorTest extends ValidatorTest {
     public void illegalArgumentMinLength() {
         // negative min length
         try {
-            MinLengthValidator minLengthValidator = new MinLengthValidator(-1);
+            new MinLengthValidator(-1);
             fail();
         }
         catch (IllegalArgumentException e) {
@@ -61,7 +61,7 @@ public class LengthValidatorTest extends ValidatorTest {
     public void illegalArgumentMaxLength() {
         // negative max length
         try {
-            MaxLengthValidator maxLengthValidator = new MaxLengthValidator(-1);
+            new MaxLengthValidator(-1);
             fail();
         }
         catch (IllegalArgumentException e) {
@@ -70,7 +70,7 @@ public class LengthValidatorTest extends ValidatorTest {
 
         // max length = 0
         try {
-            MaxLengthValidator maxLengthValidator = new MaxLengthValidator(0);
+            new MaxLengthValidator(0);
             fail();
         }
         catch (IllegalArgumentException e) {
@@ -82,7 +82,7 @@ public class LengthValidatorTest extends ValidatorTest {
     public void illegalArgumentRangeLength() {
         // negative min length
         try {
-            RangeLengthValidator rangeLengthValidator = new RangeLengthValidator(-1, 0);
+            new RangeLengthValidator(-1, 0);
             fail();
         }
         catch (IllegalArgumentException e) {
@@ -91,7 +91,7 @@ public class LengthValidatorTest extends ValidatorTest {
 
         // negative min length and max length
         try {
-            RangeLengthValidator rangeLengthValidator = new RangeLengthValidator(-1, -1);
+            new RangeLengthValidator(-1, -1);
             fail();
         }
         catch (IllegalArgumentException e) {
@@ -100,7 +100,7 @@ public class LengthValidatorTest extends ValidatorTest {
 
         // negative max length
         try {
-            RangeLengthValidator rangeLengthValidator = new RangeLengthValidator(0, -1);
+            new RangeLengthValidator(0, -1);
             fail();
         }
         catch (IllegalArgumentException e) {
@@ -109,7 +109,7 @@ public class LengthValidatorTest extends ValidatorTest {
 
         // min length > max length
         try {
-            RangeLengthValidator rangeLengthValidator = new RangeLengthValidator(3, 1);
+            new RangeLengthValidator(3, 1);
             fail();
         }
         catch (IllegalArgumentException e) {

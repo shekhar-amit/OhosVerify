@@ -58,7 +58,7 @@ public class ValueValidatorTest extends ValidatorTest {
     public void illegalArgumentRange() {
         // min value > max value
         try {
-            RangeValueValidator rangeValueValidator = new RangeValueValidator(3, 1);
+            new RangeValueValidator(3, 1);
             fail();
         }
         catch (IllegalArgumentException e) {
@@ -67,7 +67,7 @@ public class ValueValidatorTest extends ValidatorTest {
 
         // min value > max value
         try {
-            RangeValueValidator rangeValueValidator = new RangeValueValidator(-2, -10);
+            new RangeValueValidator(-2, -10);
             fail();
         }
         catch (IllegalArgumentException e) {

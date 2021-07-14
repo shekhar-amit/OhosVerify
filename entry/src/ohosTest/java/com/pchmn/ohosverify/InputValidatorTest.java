@@ -14,7 +14,7 @@ public class InputValidatorTest {
     private TextField mEditText;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         mContext = AbilityDelegatorRegistry.getAbilityDelegator().getAppContext();
         mEditText = new TextField(mContext);
     }
@@ -55,8 +55,6 @@ public class InputValidatorTest {
         assertTrue(inputValidator.isValid());
         mEditText.setText("+331234567");
         assertTrue(inputValidator.isValid());
-//        mEditText.setText("123");
-//        assertFalse(inputValidator.isValid());
     }
 
     @Test
@@ -210,7 +208,8 @@ public class InputValidatorTest {
     @Test
     public void identicalAs() {
         TextField otherEditText = new TextField(mContext);
-        otherEditText.setText("salut les amis");
+        String test_string = "salut les amis";
+        otherEditText.setText(test_string);
 
         InputValidator inputValidator = new InputValidator.Builder(mContext)
                 .on(mEditText)
@@ -219,8 +218,8 @@ public class InputValidatorTest {
 
         mEditText.setText("salut");
         assertFalse(inputValidator.isValid());
-        mEditText.setText("salut les amis");
-        otherEditText.setText("salut les amis");
+        mEditText.setText(test_string);
+        otherEditText.setText(test_string);
         assertTrue(inputValidator.isValid());
     }
 

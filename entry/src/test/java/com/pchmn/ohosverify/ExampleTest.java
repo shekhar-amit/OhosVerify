@@ -1,4 +1,4 @@
-package com.pchmn.libraryverify;
+package com.pchmn.ohosverify;
 
 import org.junit.Test;
 

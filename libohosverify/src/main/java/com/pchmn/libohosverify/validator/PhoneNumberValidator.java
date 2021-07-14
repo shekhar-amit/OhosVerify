@@ -16,6 +16,9 @@ public class PhoneNumberValidator extends AbstractValidator {
 
     @Override
     public boolean isValid(String value) {
+        if (value.length() > 15) {
+            return false;
+        }
         return PHONE.matcher(value).matches();
     }
 
