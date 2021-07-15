@@ -7,7 +7,7 @@
     ohos:orientation="vertical">
 
     <!-- form -->
-    <com.pchmn.libohosverify.Form
+    <com.pchmn.sample.Form
         ohos:id="$+id:fragment_form1"
         ohos:orientation="vertical"
         ohos:width="match_parent"
@@ -21,7 +21,7 @@
             ohos:text_size="15fp"/>
 
         <!-- email -->
-        <com.pchmn.libohosverify.InputValidator
+        <com.pchmn.sample.InputValidator
             ohos:width="match_content"
             ohos:height="match_content"
             app:validator="isEmail">
@@ -32,7 +32,7 @@
                 ohos:hint="Email"
                 ohos:text_size="20fp"/>
 
-        </com.pchmn.libohosverify.InputValidator>
+        </com.pchmn.sample.InputValidator>
 
         <Text
             ohos:height="match_content"
@@ -41,7 +41,7 @@
             ohos:text_size="15fp"/>
 
         <!-- password -->
-        <com.pchmn.libohosverify.InputValidator
+        <com.pchmn.sample.InputValidator
             ohos:width="match_content"
             ohos:height="match_content"
             app:required="true"
@@ -54,7 +54,7 @@
                 ohos:hint="Password (6 char. min) *"
                 ohos:text_size="20fp"/>
 
-        </com.pchmn.libohosverify.InputValidator>
+        </com.pchmn.sample.InputValidator>
 
         <!-- submit form -->
         <Button
@@ -64,7 +64,7 @@
             ohos:text="Validate"
             ohos:text_size="25fp"/>
 
-    </com.pchmn.libohosverify.Form>
+    </com.pchmn.sample.Form>
     <!-- /form -->
 
 </DependentLayout>

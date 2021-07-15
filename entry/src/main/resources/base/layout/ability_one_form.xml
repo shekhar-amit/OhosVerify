@@ -25,7 +25,7 @@
                 ohos:text_size="15fp"/>
 
             <!-- custom required message -->
-            <com.pchmn.libohosverify.InputValidator
+            <com.pchmn.sample.InputValidator
                 ohos:width="match_content"
                 ohos:height="match_content"
                 app:requiredMessage="Please enter a value">
@@ -36,7 +36,7 @@
                     ohos:text_size="20fp"
                     ohos:hint="Custom required message *"/>
 
-            </com.pchmn.libohosverify.InputValidator>
+            </com.pchmn.sample.InputValidator>
 
             <Text
                 ohos:height="match_content"
@@ -45,7 +45,7 @@
                 ohos:text_size="15fp"/>
 
             <!-- email -->
-            <com.pchmn.libohosverify.InputValidator
+            <com.pchmn.sample.InputValidator
                 ohos:width="match_content"
                 ohos:height="match_content"
                 app:validator="isEmail">
@@ -56,7 +56,7 @@
                     ohos:text_size="20fp"
                     ohos:hint="Email"/>
 
-            </com.pchmn.libohosverify.InputValidator>
+            </com.pchmn.sample.InputValidator>
 
             <Text
                 ohos:height="match_content"
@@ -65,7 +65,7 @@
                 ohos:text_size="15fp"/>
 
             <!-- phone number -->
-            <com.pchmn.libohosverify.InputValidator
+            <com.pchmn.sample.InputValidator
                 ohos:width="match_content"
                 ohos:height="match_content"
                 app:required="true"
@@ -78,7 +78,7 @@
                     ohos:text_size="20fp"
                     ohos:hint="Phone number *"/>
 
-            </com.pchmn.libohosverify.InputValidator>
+            </com.pchmn.sample.InputValidator>
 
             <Text
                 ohos:height="match_content"
@@ -86,7 +86,7 @@
                 ohos:text="Number"
                 ohos:text_size="15fp"/>
             <!-- number -->
-            <com.pchmn.libohosverify.InputValidator
+            <com.pchmn.sample.InputValidator
                 ohos:width="match_content"
                 ohos:height="match_content">
 
@@ -97,7 +97,7 @@
                     ohos:text_size="20fp"
                     ohos:hint="Number"/>
 
-            </com.pchmn.libohosverify.InputValidator>
+            </com.pchmn.sample.InputValidator>
 
             <Text
                 ohos:height="match_content"
@@ -106,7 +106,7 @@
                 ohos:text_size="15fp"/>
 
             <!-- regex -->
-            <com.pchmn.libohosverify.InputValidator
+            <com.pchmn.sample.InputValidator
                 ohos:width="match_content"
                 ohos:height="match_content"
                 app:regex="^[0-9]{4}$"
@@ -118,7 +118,7 @@
                     ohos:text_size="20fp"
                     ohos:hint="Regex 4 digits (custom error msg)"/>
 
-            </com.pchmn.libohosverify.InputValidator>
+            </com.pchmn.sample.InputValidator>
 
             <Text
                 ohos:height="match_content"
@@ -127,7 +127,7 @@
                 ohos:text_size="15fp"/>
 
             <!-- password -->
-            <com.pchmn.libohosverify.InputValidator
+            <com.pchmn.sample.InputValidator
                 ohos:width="match_content"
                 ohos:height="match_content"
                 app:required="true">
@@ -140,7 +140,7 @@
                     ohos:text_size="20fp"
                     ohos:hint="Password *" />
 
-            </com.pchmn.libohosverify.InputValidator>
+            </com.pchmn.sample.InputValidator>
 
             <Text
                 ohos:height="match_content"
@@ -149,7 +149,7 @@
                 ohos:text_size="15fp"/>
 
             <!-- confirm password -->
-            <com.pchmn.libohosverify.InputValidator
+            <com.pchmn.sample.InputValidator
                 ohos:width="match_content"
                 ohos:height="match_content"
                 app:required="true"
@@ -162,7 +162,7 @@
                     ohos:text_size="20fp"
                     ohos:hint="Confirm password *"/>
 
-            </com.pchmn.libohosverify.InputValidator>
+            </com.pchmn.sample.InputValidator>
 
             <Text
                 ohos:height="match_content"
@@ -171,7 +171,7 @@
                 ohos:text_size="15fp"/>
 
             <!-- 6 characters min -->
-            <com.pchmn.libohosverify.InputValidator
+            <com.pchmn.sample.InputValidator
                 ohos:width="match_content"
                 ohos:height="match_content"
                 app:minLength="6">
@@ -182,7 +182,7 @@
                     ohos:text_size="20fp"
                     ohos:hint="At least 6 characters long" />
 
-            </com.pchmn.libohosverify.InputValidator>
+            </com.pchmn.sample.InputValidator>
 
             <Text
                 ohos:height="match_content"
@@ -191,7 +191,7 @@
                 ohos:text_size="15fp"/>
 
             <!-- between 2 and 8 characters -->
-            <com.pchmn.libohosverify.InputValidator
+            <com.pchmn.sample.InputValidator
                 ohos:width="match_content"
                 ohos:height="match_content"
                 app:minLength="2"
@@ -203,7 +203,7 @@
                     ohos:text_size="20fp"
                     ohos:hint="Between 2 and 8 characters" />
 
-            </com.pchmn.libohosverify.InputValidator>
+            </com.pchmn.sample.InputValidator>
 
             <Text
                 ohos:height="match_content"
@@ -212,7 +212,7 @@
                 ohos:text_size="15fp"/>
 
             <!-- between 15 and 50 -->
-            <com.pchmn.libohosverify.InputValidator
+            <com.pchmn.sample.InputValidator
                 ohos:width="match_content"
                 ohos:height="match_content"
                 app:minValue="15"
@@ -225,7 +225,7 @@
                     ohos:text_size="20fp"
                     ohos:hint="Between 15 and 50 (value)" />
 
-            </com.pchmn.libohosverify.InputValidator>
+            </com.pchmn.sample.InputValidator>
 
             <Text
                 ohos:height="match_content"
@@ -234,7 +234,7 @@
                 ohos:text_size="15fp"/>
 
             <!-- Custom validator -->
-            <com.pchmn.libohosverify.InputValidator
+            <com.pchmn.sample.InputValidator
                 ohos:id="$+id:custom_validator"
                 ohos:width="match_content"
                 ohos:height="match_content"
@@ -246,7 +246,7 @@
                     ohos:text_size="20fp"
                     ohos:hint="Custom validator (== 'ok man') *" />
 
-            </com.pchmn.libohosverify.InputValidator>
+            </com.pchmn.sample.InputValidator>
 
             <!-- submit button -->
             <Button
