@@ -1,5 +1,6 @@
 package com.pchmn.sample.validator;
 
+import com.pchmn.ohosverify.validator.EmailValidator;
 import ohos.aafwk.ability.delegation.AbilityDelegatorRegistry;
 import org.junit.Before;
 import org.junit.Test;

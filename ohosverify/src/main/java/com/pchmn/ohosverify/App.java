@@ -1,4 +1,4 @@
-package com.pchmn.sample;
+package com.pchmn.ohosverify;
 
 import ohos.aafwk.ability.AbilityPackage;
 import ohos.aafwk.ability.delegation.AbilityDelegatorRegistry;

@@ -1,4 +1,4 @@
-package com.pchmn.sample;
+package com.pchmn.ohosverify;
 
 import java.util.ArrayList;
 import java.util.List;

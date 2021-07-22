@@ -1,10 +1,38 @@
 
+  
 
   
   
 # OhosVerify
 
-HMOS library designed for rapid and customizable form validation.
+Ohos library designed for rapid and customizable form validation. 
+
+# Source
+
+The library was ported for HarmonyOS from the mentioned Android Library:
+[AndroidVerify](https://github.com/pchmn/AndroidVerify/) (version 1.0.2)
+
+## Features
+
+The library supports rapid and customizable form validation which can be integrated using Java Builder functions or wrapping text fields via XML. It supports validation for Numeric, Phone Number, Email, IP Address, URL, Regex, Identical fields, Minimum/Maximum/Range value, and Minimum/Maximum/Range character length. The validators can also be [customized](#advanced-usage) as required.
+
+  
+## Dependency
+1. For using LiteGo module in sample app, include the source code and add the below dependencies in entry/build.gradle to generate hap/support.har.
+```
+	dependencies {
+		implementation project(':ohosverify')
+		testCompile 'junit:junit:4.12'
+	}
+```
+2. For using LiteGo module in separate application using har file, add the har file in the entry/libs folder and add the dependencies in entry/build.gradle file.
+```
+	dependencies {
+		implementation fileTree(dir: 'libs', include: ['*.har'])
+		testCompile 'junit:junit:4.12'
+	}
+
+```
 
 ## Usage
 
@@ -347,9 +375,29 @@ Method | Return value | Description
 
 ## Sample
 
-A sample app with some use cases of the library is available on this [link](https://github.com/shekhar-amit/OhosVerify/tree/master/entry)
+A sample app with some use cases of the library is available on this [link](entry/)
 
-## Credits
+## Future Work
 
-The library was ported for HarmonyOS from the mentioned Android Library:
-* [AndroidVerify](https://github.com/pchmn/AndroidVerify/)
+The error are shown on calling `isValid()` method via text field's hint text as shown. This can be toggled on and off via the `showErrors()` method in form builder. Future work would include showing error message as a separate floating text.
+
+![Before Errors](readme_resources/sample_before.png)
+![After Errors](readme_resources/sample_after.png)
+
+## License
+
+```
+Copyright 2017 pchmn
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```

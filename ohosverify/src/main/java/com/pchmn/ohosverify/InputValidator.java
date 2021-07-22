@@ -1,21 +1,21 @@
-package com.pchmn.sample;
+package com.pchmn.ohosverify;
 
-import com.pchmn.sample.validator.AbstractValidator;
-import com.pchmn.sample.validator.EmailValidator;
-import com.pchmn.sample.validator.IPValidator;
-import com.pchmn.sample.validator.IdenticalValidator;
-import com.pchmn.sample.validator.MaxLengthValidator;
-import com.pchmn.sample.validator.MaxValueValidator;
-import com.pchmn.sample.validator.MinLengthValidator;
-import com.pchmn.sample.validator.MinValueValidator;
-import com.pchmn.sample.validator.NumericValidator;
-import com.pchmn.sample.validator.PhoneNumberValidator;
-import com.pchmn.sample.validator.RangeLengthValidator;
-import com.pchmn.sample.validator.RangeValueValidator;
-import com.pchmn.sample.validator.RegexValidator;
-import com.pchmn.sample.validator.RequiredValidator;
-import com.pchmn.sample.validator.UrlValidator;
-import com.pchmn.sample.validator.ValidateValidator;
+import com.pchmn.ohosverify.validator.AbstractValidator;
+import com.pchmn.ohosverify.validator.EmailValidator;
+import com.pchmn.ohosverify.validator.IPValidator;
+import com.pchmn.ohosverify.validator.IdenticalValidator;
+import com.pchmn.ohosverify.validator.MaxLengthValidator;
+import com.pchmn.ohosverify.validator.MaxValueValidator;
+import com.pchmn.ohosverify.validator.MinLengthValidator;
+import com.pchmn.ohosverify.validator.MinValueValidator;
+import com.pchmn.ohosverify.validator.NumericValidator;
+import com.pchmn.ohosverify.validator.PhoneNumberValidator;
+import com.pchmn.ohosverify.validator.RangeLengthValidator;
+import com.pchmn.ohosverify.validator.RangeValueValidator;
+import com.pchmn.ohosverify.validator.RegexValidator;
+import com.pchmn.ohosverify.validator.RequiredValidator;
+import com.pchmn.ohosverify.validator.UrlValidator;
+import com.pchmn.ohosverify.validator.ValidateValidator;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
@@ -82,7 +82,7 @@ public class InputValidator extends DependentLayout implements Component.Estimat
         } catch (Exception e) {
             StringWriter errors = new StringWriter();
             e.printStackTrace(new PrintWriter(errors));
-            HiLog.error(LABEL,e.toString());
+            HiLog.error(LABEL, e.toString());
         }
     }
 
@@ -101,7 +101,7 @@ public class InputValidator extends DependentLayout implements Component.Estimat
         } catch (Exception e) {
             StringWriter errors = new StringWriter();
             e.printStackTrace(new PrintWriter(errors));
-            HiLog.error(LABEL,e.toString());
+            HiLog.error(LABEL, e.toString());
         }
     }
 
@@ -427,7 +427,7 @@ public class InputValidator extends DependentLayout implements Component.Estimat
             } catch (Exception e) {
                 StringWriter errors = new StringWriter();
                 e.printStackTrace(new PrintWriter(errors));
-                HiLog.error(LABEL,e.toString());
+                HiLog.error(LABEL, e.toString());
             }
         }
         mEditText = (TextField) getComponentAt(0);

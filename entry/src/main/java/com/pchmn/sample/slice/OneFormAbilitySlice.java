@@ -16,9 +16,9 @@
 
 package com.pchmn.sample.slice;
 
-import com.pchmn.sample.Form;
-import com.pchmn.sample.InputValidator;
-import com.pchmn.sample.validator.AbstractValidator;
+import com.pchmn.ohosverify.Form;
+import com.pchmn.ohosverify.InputValidator;
+import com.pchmn.ohosverify.validator.AbstractValidator;
 import com.pchmn.sample.ResourceTable;
 import ohos.aafwk.ability.AbilitySlice;
 import ohos.aafwk.content.Intent;

@@ -1,6 +1,6 @@
 {
   "app": {
-    "bundleName": "com.pchmn.ohosverify",
+    "bundleName": "com.pchmn.sample",
     "vendor": "pchmn",
     "version": {
       "code": 1000000,

@@ -1,5 +1,6 @@
 package com.pchmn.sample.validator;
 
+import com.pchmn.ohosverify.validator.AbstractValidator;
 import ohos.app.Context;
 import org.junit.Before;
 import org.junit.Test;

@@ -1,4 +1,4 @@
-package com.pchmn.sample.validator;
+package com.pchmn.ohosverify.validator;
 
 /**
  * Basic unit that validates if the length lies within a given range.

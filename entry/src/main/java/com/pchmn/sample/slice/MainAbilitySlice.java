@@ -48,8 +48,8 @@ public class MainAbilitySlice extends AbilitySlice {
         btn_form_fraction.setClickedListener(component -> {
             Intent intent2 = new Intent();
             Operation operation = new Intent.OperationBuilder()
-                    .withBundleName("com.pchmn.ohosverify")
-                    .withAbilityName("com.pchmn.ohosverify.FormFractionAbility")
+                    .withBundleName("com.pchmn.sample")
+                    .withAbilityName("com.pchmn.sample.FormFractionAbility")
                     .build();
             intent2.setOperation(operation);
             startAbility(intent2);

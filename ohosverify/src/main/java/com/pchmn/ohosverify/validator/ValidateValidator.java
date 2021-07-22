@@ -1,4 +1,4 @@
-package com.pchmn.sample.validator;
+package com.pchmn.ohosverify.validator;
 
 /**
  * Basic dummy unit.

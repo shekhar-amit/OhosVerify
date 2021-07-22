@@ -7,7 +7,7 @@
     ohos:orientation="vertical">
 
     <!-- form1 -->
-    <com.pchmn.sample.Form
+    <com.pchmn.ohosverify.Form
         ohos:id="$+id:form1"
         ohos:orientation="vertical"
         ohos:width="match_parent"
@@ -21,7 +21,7 @@
             ohos:text_size="15fp"/>
 
         <!-- email -->
-        <com.pchmn.sample.InputValidator
+        <com.pchmn.ohosverify.InputValidator
             ohos:width="match_content"
             ohos:height="match_content">
 
@@ -31,7 +31,7 @@
                 ohos:text_size="20fp"
                 ohos:hint="Email"/>
 
-        </com.pchmn.sample.InputValidator>
+        </com.pchmn.ohosverify.InputValidator>
 
         <Text
             ohos:height="match_content"
@@ -40,7 +40,7 @@
             ohos:text_size="15fp"/>
 
         <!-- password -->
-        <com.pchmn.sample.InputValidator
+        <com.pchmn.ohosverify.InputValidator
             ohos:width="match_content"
             ohos:height="match_content"
             app:required="true"
@@ -53,7 +53,7 @@
                 ohos:text_size="20fp"
                 ohos:hint="Password (6 char. min) *" />
 
-        </com.pchmn.sample.InputValidator>
+        </com.pchmn.ohosverify.InputValidator>
 
         <!-- submit form -->
         <Button
@@ -63,11 +63,11 @@
             ohos:text_size="20fp"
             ohos:text="Validate form1"/>
 
-    </com.pchmn.sample.Form>
+    </com.pchmn.ohosverify.Form>
     <!-- /form1 -->
 
     <!-- form2 -->
-    <com.pchmn.sample.Form
+    <com.pchmn.ohosverify.Form
         ohos:id="$+id:form2"
         ohos:orientation="vertical"
         ohos:width="match_parent"
@@ -82,7 +82,7 @@
             ohos:text_size="15fp"/>
 
         <!-- phone number -->
-        <com.pchmn.sample.InputValidator
+        <com.pchmn.ohosverify.InputValidator
             ohos:id="$+id:tiv1"
             ohos:width="match_content"
             ohos:height="match_content"
@@ -95,7 +95,7 @@
                 ohos:text_size="20fp"
                 ohos:hint="Phone number *"/>
 
-        </com.pchmn.sample.InputValidator>
+        </com.pchmn.ohosverify.InputValidator>
 
         <Text
             ohos:height="match_content"
@@ -104,7 +104,7 @@
             ohos:text_size="15fp"/>
 
         <!-- age -->
-        <com.pchmn.sample.InputValidator
+        <com.pchmn.ohosverify.InputValidator
             ohos:width="match_content"
             ohos:height="match_content"
             app:minValue="12">
@@ -116,7 +116,7 @@
                 ohos:text_size="20fp"
                 ohos:hint="Age (12 min)" />
 
-        </com.pchmn.sample.InputValidator>
+        </com.pchmn.ohosverify.InputValidator>
 
         <!-- submit form -->
         <Button
@@ -126,7 +126,7 @@
             ohos:text_size="20fp"
             ohos:text="Validate form2"/>
 
-    </com.pchmn.sample.Form>
+    </com.pchmn.ohosverify.Form>
     <!-- /form2 -->
 
 </DependentLayout>

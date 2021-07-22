@@ -1,5 +1,6 @@
 package com.pchmn.sample;
 
+import com.pchmn.ohosverify.InputValidator;
 import ohos.aafwk.ability.delegation.AbilityDelegatorRegistry;
 import ohos.agp.components.TextField;
 import ohos.app.Context;
