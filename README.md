@@ -381,8 +381,8 @@ A sample app with some use cases of the library is available on this [link](entr
 
 The error are shown on calling `isValid()` method via text field's hint text as shown. This can be toggled on and off via the `showErrors()` method in form builder. Future work would include showing error message as a separate floating text.
 
-![Before Errors](readme_resources/sample_before.png)
-![After Errors](readme_resources/sample_after.png)
+![Before Errors](readme_resources/sample_before.PNG)
+![After Errors](readme_resources/sample_after.PNG)
 
 ## License
 
