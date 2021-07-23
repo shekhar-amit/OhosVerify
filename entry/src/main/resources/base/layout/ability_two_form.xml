@@ -23,7 +23,8 @@
         <!-- email -->
         <com.pchmn.ohosverify.InputValidator
             ohos:width="match_content"
-            ohos:height="match_content">
+            ohos:height="match_content"
+            app:validator="isEmail">
 
             <TextField
                 ohos:width="match_parent"
@@ -86,7 +87,8 @@
             ohos:id="$+id:tiv1"
             ohos:width="match_content"
             ohos:height="match_content"
-            app:required="true">
+            app:required="true"
+            app:validator="isPhoneNumber">
 
             <TextField
                 ohos:width="match_parent"
