@@ -1,12 +1,11 @@
 package com.pchmn.ohosverify.validator;
 
+import ohos.hiviewdfx.HiLog;
+import ohos.utils.CommonPattern;
 import com.pchmn.ohosverify.App;
 import com.pchmn.ohosverify.ResourceTable;
-import java.io.IOException;
-import ohos.global.resource.NotExistException;
-import ohos.global.resource.WrongTypeException;
-import ohos.utils.CommonPattern;
-
+import java.io.PrintWriter;
+import java.io.StringWriter;
 
 /**
  * Basic unit that validates email.
@@ -20,12 +19,10 @@ public class EmailValidator extends AbstractValidator {
         try {
             mErrorMessage = App.getInstance().getContext().getResourceManager()
                         .getElement(ResourceTable.String_error_invalid_email).getString();
-        } catch (NotExistException e) {
-            e.printStackTrace();
-        } catch (WrongTypeException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
+        } catch (Exception e) {
+            StringWriter errors = new StringWriter();
+            e.printStackTrace(new PrintWriter(errors));
+            HiLog.error(LABEL, e.toString());
         }
     }
 
