@@ -327,7 +327,6 @@ public class InputValidator extends DependentLayout implements Component.Estimat
             buildValidator();
         }
         String value = mEditText.getText();
-        System.out.println("AMIT : defaulthitt " + defaultHint);
         // if already invalid and no value set
         if (mEditText.getHintColor().equals(Color.RED) && (value==null || value.length()==0)) {
             return false;
