@@ -74,6 +74,7 @@ public class FormTest {
         validate();
     }
 
+    @Test
     public void validate() {
         // reset
         mEmailEditText.setText("");
@@ -129,6 +130,7 @@ public class FormTest {
         showErrors();
     }
 
+    @Test
     public void showErrors() {
         // reset error
         String default_hint = mEmailEditText.getHint();
